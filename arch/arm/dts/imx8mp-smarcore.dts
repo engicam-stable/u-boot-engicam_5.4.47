@@ -86,6 +86,7 @@
 	};
 };
 
+
 &eqos {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_eqos>;
@@ -98,9 +99,9 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 
-		ethphy0: ethernet-phy@7 {
+		ethphy0: ethernet-phy@1 {
 			compatible = "ethernet-phy-ieee802.3-c22";
-			reg = <7>;
+			reg = <1>;
 			eee-broken-1000t;
 		};
 	};
@@ -387,7 +388,7 @@
 
 	pinctrl_eqos: eqosgrp {
 		fsl,pins = <
-			MX8MP_IOMUXC_ENET_MDC__ENET_QOS_MDC				0x3
+			MX8MP_IOMUXC_GPIO1_IO06__ENET_QOS_MDC				0x3
 			MX8MP_IOMUXC_ENET_MDIO__ENET_QOS_MDIO				0x3
 			MX8MP_IOMUXC_ENET_RD0__ENET_QOS_RGMII_RD0			0x91
 			MX8MP_IOMUXC_ENET_RD1__ENET_QOS_RGMII_RD1			0x91
@@ -401,7 +402,6 @@
 			MX8MP_IOMUXC_ENET_TD3__ENET_QOS_RGMII_TD3			0x1f
 			MX8MP_IOMUXC_ENET_TX_CTL__ENET_QOS_RGMII_TX_CTL			0x1f
 			MX8MP_IOMUXC_ENET_TXC__CCM_ENET_QOS_CLOCK_GENERATE_TX_CLK	0x1f
-			//MX8MP_IOMUXC_SAI3_RXFS__GPIO4_IO28				0x19
 		>;
 	};
 
