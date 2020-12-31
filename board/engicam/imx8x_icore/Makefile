@@ -4,7 +4,7 @@
 # SPDX-License-Identifier:	GPL-2.0+
 #
 
-obj-y += icore_mx8x.o
+obj-y += imx8x_icore.o
 
 ifdef CONFIG_SPL_BUILD
 obj-y += spl.o

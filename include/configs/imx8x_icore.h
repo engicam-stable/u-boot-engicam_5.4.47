@@ -87,11 +87,11 @@
 
 #define JAILHOUSE_ENV \
 	"jh_mmcboot=" \
-		"setenv fdt_file imx8qxp-icore.dtb;"\
+		"setenv fdt_file imx8x-icore.dtb;"\
 		"setenv boot_os 'scu_rm dtb ${fdt_addr}; booti ${loadaddr} - ${fdt_addr};'; " \
 		"run mmcboot; \0" \
 	"jh_netboot=" \
-		"setenv fdt_file imx8qxp-icore.dtb;"\
+		"setenv fdt_file imx8x-icore.dtb;"\
 		"setenv boot_os 'scu_rm dtb ${fdt_addr}; booti ${loadaddr} - ${fdt_addr};'; " \
 		"run netboot; \0"
 

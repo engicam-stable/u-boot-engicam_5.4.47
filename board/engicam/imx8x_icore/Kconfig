@@ -1,13 +1,13 @@
-if TARGET_ICORE_MX8XQ
+if TARGET_IMX8X_ICORE
 
 config SYS_BOARD
-	default "icore_mx8xq"
+	default "imx8x_icore"
 
 config SYS_VENDOR
 	default "engicam"
 
 config SYS_CONFIG_NAME
-	default "icore_mx8xq"
+	default "imx8x_icore"
 
 source "board/freescale/common/Kconfig"
 

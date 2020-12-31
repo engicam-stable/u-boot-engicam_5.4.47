@@ -222,8 +222,8 @@ int board_phy_config(struct phy_device *phydev)
 
 int checkboard(void)
 {
-#ifdef CONFIG_TARGET_ICORE_MX8XQ
-	puts("Board: i.Core MX8XQ based\n");
+#ifdef CONFIG_TARGET_IMX8X_ICORE
+	puts("Board: i.Core iMX8X based\n");
 #else
 	puts("Board: i.Core MX8XD based\n");
 #endif
@@ -393,8 +393,8 @@ int board_late_init(void)
 
 #ifdef CONFIG_ENV_VARS_UBOOT_RUNTIME_CONFIG
 	env_set("board_name", "i.CORE");
-#ifdef TARGET_ICORE_MX8XQ
-	env_set("board_rev", "iMX8XQ");
+#ifdef TARGET_IMX8X_ICORE
+	env_set("board_rev", "iMX8X");
 #else
 	env_set("board_rev", "iMX8XD");
 #endif
